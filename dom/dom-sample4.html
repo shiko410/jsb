@@ -7,6 +7,10 @@
   </ul>
   <div>End</div>
   <script>
+    console.dir(document.body.childNodes);
+    console.log(document.body.childNodes[0].innerHTML);
+    console.log(document.body.childNodes[1].innerHTML);
+    // bodyの１階層下のすべての子要素を取得
     for (let i = 0; i < document.body.childNodes.length; i++) {
       // Text, DIV, Text, UL, ..., SCRIPT
       console.log( document.body.childNodes[i] );
