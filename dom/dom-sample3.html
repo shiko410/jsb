@@ -12,10 +12,13 @@
 </ul>
 <script>
   let elements = document.querySelectorAll('ul > li:last-child');
-
+  let element = document.querySelector('ul > li:last-child');
+  // querySelectorAllの呼び出し
   for (let elem of elements) {
     alert(elem.innerHTML); // "test", "passed"
   }
+  // querySelectorの呼び出し
+  alert(element.innerHTML);
 </script>
 </body>
 </html>
