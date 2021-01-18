@@ -11,14 +11,14 @@
   <li>passed</li>
 </ul>
 <script>
-  let elements = document.querySelectorAll('ul > li:last-child');
   let element = document.querySelector('ul > li:last-child');
+  let elements = document.querySelectorAll('ul > li:last-child');
+  
+  // querySelectorの呼び出し
+  alert(element.innerHTML); // "test"
   // querySelectorAllの呼び出し
   for (let elem of elements) {
     alert(elem.innerHTML); // "test", "passed"
   }
-  // querySelectorの呼び出し
-  alert(element.innerHTML);
-</script>
-</body>
+</script></body>
 </html>
