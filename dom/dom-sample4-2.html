@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>dom-sample4-2.html</title></head>
+<body>
+<ul id="test">
+  <li>test1</li>
+  <li>test2</li>
+  <li>test3</li>
+</ul>
+<script>
+  // let elem = document.getElementsByTagName('li');
+  let elem = document.getElementById('test');
+  console.dir(elem.firstChild); // ↪ #text （テキスト(改行文字とタブ文字)）
+  console.dir(elem.lastChild);  // ↪ #text （テキスト(改行文字とタブ文字)）
+  for (let i = 0; i < elem.childNodes.length; i++) {
+    console.log( elem.childNodes[i] );
+    //↪ #text, #li, #text, #li, #text, #li, #text
+  };
+</script>
+</body>
+</html>
